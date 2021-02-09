@@ -1,1 +1,1 @@
-print(list(map(lambda x: {'+': lambda n1,n2:print(n1+n2), '-': lambda n1,n2:print(n1-n2), '*': lambda n1,n2:print(n1*n2), '/': lambda n1,n2:print(n1/n2)}[str(input('Enter The Operation: '))](int(input('Enter The First Number: ')), int(input('Enter The Second Number: '))), [''] * int(input('how many calculations would you like to do: ')))))
+print(list(map(lambda x: print(eval(input('Enter the question(e.g.4+4): '))), ['']*int(input('How many Operations would you like to complete? ')))))
